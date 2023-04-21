@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Libros</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="stylesheet" href="estilo/css/styles.css">
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+</head>
+
+<body>
+
+  <header id="header">
+    <h1>LIBRERIA ONLINE</h1>
+    <button id="cesta-carrito"><i class="fas fa-shopping-cart"></i><span id="contador-carrito">0</span></button>
+  </header>
+
+  <main id="libros-contenedor">
+
+
+  </main>
+
+  <div class="modal-contenedor">
+    <div class="modal-carrito">
+      <h3>Carrito</h3>
+      <div id="carrito-contenedor">
+      </div>
+      <button id="btn-cerrar-carrito"></button> 
+      <p class="precioProducto">Precio total: $<span id="precioTotal"></span></p>
+      <button id="comprar-carrito" class="boton-comprar">comprar</button> 
+    </div>
+  </div>
+
+  <script src="./src/controller" type="module"></script>
+  <script src="./src/modal.js"></script>
+  <script src="./src/accionesCarrito.js" type="module"></script>
+  <script src="./src/actualizarCarrito.js" type="module"></script>
+  <script src="./src/storage.js" type="module"></script>
+  <script src="libros.js" type="module"></script>
+  <script src="index.js" type="module"></script>
+  <script src="https://kit.fontawesome.com/df59baf6b8.js" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/luxon@2.3.0/build/global/luxon.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
+</body>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/brands.min.css"
+	integrity="sha512-bSncow0ApIhONbz+pNI52n0trz5fMWbgteHsonaPk42JbunIeM9ee+zTYAUP1eLPky5wP0XZ7MSLAPxKkwnlzw=="
+	crossorigin="anonymous" referrerpolicy="no-referrer" />
+</html>
